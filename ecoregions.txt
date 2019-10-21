@@ -1,0 +1,30 @@
+Bailey's ecoregions
+
+National Forest Service. Originally only forested states.
+http://nationalatlas.gov/mld/ecoregp.html
+
+
+Omernik's ecoregions.
+
+More about soils and vegetation. Compiled by EPA.
+http://nationalatlas.gov/mld/ecoomrp.html
+http://www.epa.gov/wed/pages/ecoregions/level_iii.htm
+Saved as ecoomrp075.tar.gz, June 2005.
+http://www.epa.gov/wed/pages/ecoregions/level_iii_iv.htm#Level IV
+
+Saved as Eco_Level_IV_US.zip.
+Saved as Eco_Level_III_US.zip.
+
+
+
+WWF, derived from Bailey's
+
+Covers the world, though.
+http://www.worldwildlife.org/science/data/item1875.html
+
+
+And the agricultural districts:
+http://www.nass.usda.gov/Charts_and_Maps/Crops_County/boundary_maps/asds.zip
+
+For the Crop Data Layer, the category names are in
+http://www.nass.usda.gov/research/Cropland/docs/generic_cdl_attributes.tif.vat.dbf.zip

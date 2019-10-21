@@ -1,0 +1,9 @@
+usda
+nasa
+usgs
+noaa
+
+The land process is DAC. Data archive ...
+Look up LPDAAC. https://lpdaac.usgs.gov/
+climate data center: http://www.ncdc.noaa.gov/oa/ncdc.html
+reanalysis data on ncar ncop website

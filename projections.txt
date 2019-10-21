@@ -1,0 +1,27 @@
+Projection for CDRS 30m data.
+
++proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs
+
+
+Eco_Level_III_US
++proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs
+
+County Data
++proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs
+
+This is what translated the US County vector data to Alber's Equal Area.
+ogr2ogr county_eae.shp ../tl_2010_us_county10/tl_2010_us_county10.shp -f "ESRI Shapefile" -t_srs "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
+
+Take US County to AEA for all of North America for use with GIMMS version of NDVI.
+ogr2ogr county_gimms.shp ../tl_2010_us_county10/tl_2010_us_county10.shp -f "ESRI Shapefile" -t_srs "+proj=aea +lat_1=20 +lat_2=60 +lat_0=45 +lon_0=-103 +x_0=0 +y_0=0 +ellps=NAD27 +units=m +no_defs"
+
+When I made a longlat shapefile from the observations, I projected it with ogr2ogr. This time it did not have an internal coordinate system, so I had to assign a source srs.
+ogr2ogr cereal_obs_eae.shp cereal_obs_points.shp -f "ESRI Shapefile" -t_srs "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs" -s_srs "+proj=longlat  +datum=NAD83 +no_defs"
+
+Attempt to warp a CDLS image from Albers Equal Area to longlat:
+gdalwarp -t_srs "+proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs" -s_srs "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs" -r near -wm 8000 -of GTiff 2011_30m_cdls.img 2011_cdls_longlat.tif
+
+How I made the mini CDLS file: First I got coordinates from clicking inside qgis. Then I used gdal_translate.
+gdal_translate -projwin 389190 1367957 569589 1148900 -of HFA 2011_30m_cdls.img 2011_cdls_mini.img
+
+

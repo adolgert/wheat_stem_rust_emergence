@@ -1,0 +1,6 @@
+This image shows GIMMS NDVI measurements for the whole year at 16 random sites. They were chosen as the GIMMS raster square that had the highest wheat concentration in each county for counties that had rust observations.
+
+Created with the command:
+python aylor_corn.py --test
+which runs aylor_corn.test_plot_green().
+

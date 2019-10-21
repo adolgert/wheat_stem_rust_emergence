@@ -1,0 +1,105 @@
+\documentclass{article}
+
+\title{Kriging Documentation for Fields Module}
+\begin{document}
+\maketitle
+Looking at \texttt{Krig.family.R} in the R module \texttt{fields}.
+
+\section{Input Variables}
+\begin{description}
+\item[$W$] The explicit observation weight matrix, assigned to \texttt{out\$W} and later to \texttt{out\$weightsM}. The square root of this is saved as \texttt{out\$W2}.
+\item[$\lambda$] Smoothing parameter that is the ratio of the error variance ($\sigma^2$) to the scale parameter of the covariance function ($\rho$). If omitted this is estimated by GCV ( see method below).
+\item[$df$] The effective number of parameters for the fitted surface. Conversely, $N- d_f$, where $N$ is the total number of observations is the degrees of freedom associated with the residuals. This is an alternative to specifying lambda and much more interpretable. NOTE: GCV argument defaults to TRUE if this argument is used. Assigned to \texttt{out\$eff.df}.
+\item[$Z$] A vector of matrix of covariates to be include in the fixed part of the model. If NULL (default) no addtional covariates are included. These are assigned to \texttt{out\$ZM}.
+\item[$x$] Matrix of independent variables. These could the locations for spatial data or the indepedent variables in a regression. The unique values of $x$ are assigned to \texttt{out\$xM}, which then become the knots.
+
+\end{description}
+
+\section{Krig.engine.default}
+These are matrix decompositions for computing an estimate. The form of the estimate is
+\begin{equation}
+  \hat{f}(x) = \sum \phi_j(x) d_j + \sum \psi_k(x) c_k.
+\end{equation}
+The $\phi_j$ are the fixed part of the model, usually low-order polynomials, and
+$\phi_j$ is also referred to as spatial drift. The $\psi_k$ are the covarianced functions evaluated at
+the unique observation locations, or knots. If $xM_k$ is the kth unique location
+$\psi_k(x)=k(x, xM_k)$, $xM$ is also \texttt{out\$knots} in the code below.
+
+The goal is to find decompositions that facilitate rapid solution for the vectors
+$d$ and $c$. The eigen approach below as identified by Wahba, Bates, Wendelberger, and is stable
+even for near-colinear covariance matrices. This function does the main computations leading to the 
+matrix decompositions. With these decompositions the coefficients of the solution
+are found in \texttt{Krig.coef} and the GCV and REML functions in \texttt{Krig.gcv}.
+
+First is an outline of calculations with equal weights. $T$, the fixed effects regression matrix,
+$T_{ij} = \phi_j(xM_i)$, $K$, the covariance matrix for the unique locations. From the spline literature
+the solution solves the well-known system of two equations,
+\begin{eqnarray}
+  -K(yM - Td - Kc) + \lambda Kc & = & 0 \\
+  -T^t ( yM - Td - Kc) & = & 0
+\end{eqnarray}
+Multiplying through by $K^{-1}$ and substituting, these are equivalent to
+\begin{eqnarray}
+  -(yM - Td - Kc) + \lambda c & = & 0 \label{eqn:multed1}\\
+  T^t c = 0 \label{eqn:multed2}
+\end{eqnarray}
+
+A QR decomposition is done for $T=(Q_1, Q_2) R$. By definition, $Q_2^T T = 0$.
+Eqn~\ref{eqn:multed2} can be though of as a constraint with $c=Q_2\beta_2$. Substitute
+in Eqn~\ref{eqn:multed1} and multiply through by $Q_2^T$ to get
+\begin{equation}
+  -Q_2^T yM + Q_2^T K Q_2 \beta_2 + \lambda \beta_2 = 0.
+\end{equation}
+Solve this to get
+\begin{equation}
+  \beta_2 = (Q_2^T K Q_2 + \lambda I)^{-1} Q_2^T yM,
+\end{equation}
+and so one solves this linear system for $\beta_2$ and then
+uses $ c=Q_2 \beta_2$ to determine $c$. 
+
+Eigenvalues and eigenvectors are found for $M=Q_2^T K Q_2$,
+\begin{equation}
+  M = V \mbox{diag}(\eta) V^T
+\end{equation}
+and these facilitate solving this system efficiently fo rmany different
+values of $\lambda$. Create eigenvectors, $D=(0, 1/\eta)$, and
+$G=(0,0) \times \mbox{diag}(D)$  and $G=(0,V) \times \mbox{diag}(D)$ so that
+\begin{equation}
+  \beta_2 = G \frac{1}{1+\lambda D} u
+\end{equation}
+with
+\begin{equation}
+  u = (0, V Q_2^T W2 yM).
+\end{equation}
+Throughout, keep in mind that $M$ has smaller dimension than $G$ due to
+handling the null space.
+
+Now solve for $d$. From Eqn.~\ref{eqn:multed1}, $Td = yM - Kc - \lambda c$,
+\begin{equation}
+  (Q_1^T) Td = (Q_1^T) (yM - Kc)
+\end{equation}
+($\lambda c$ is zero by Eqn.~\ref{eqn:multed2}). So $Rd = (Q_1^T) (yM - Kc)$.
+Use QR functions to solve triangular system in $R$ to find $d$.
+
+What about errors with a general precision matrix, $W$? This is an important case because,
+with replicated observations, the problem will simplify into a smoothing problem with the replicate group means and unequal measurement error variances.
+
+The equations to solve are
+\begin{eqnarray}
+  -KW(yM - Td - Kc) + \lambda Kc & = & 0  \\
+  -T^t W( yM - Td - Kc ) & = & 0.
+\end{eqnarray}
+Multiply through by $K^{-1}$ and substitute, and these are equivalent to
+\begin{eqnarray}
+  -W( yM - Td - Kc) + \lambda c & = & 0 \label{eqn:err1} \\
+  (WT)^t c & = & 0 \label{eqn:err2}
+\end{eqnarray}
+Let $W2$ be the symmetric square root of $W$, $W = W2W2$,
+and let $W2_i$ be the inverse of $W2$.
+\begin{eqnarray}
+  - (W2 yM - W2 T d - (W2 K W2) W2_{ic}) + \lambda W2_i c & = & 0 \label{eqn:1c}\\
+  (W2T)^t W2c & = & 0 \label{eqn:2c}
+\end{eqnarray}
+
+
+\end{document}

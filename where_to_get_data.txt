@@ -1,0 +1,10 @@
+US State Shapefile from this URL.
+http://www2.census.gov/geo/tiger/TIGER2007FE/fe_2007_us_state.zip
+
+GIMMS NDVI
+http://glcf.umiacs.umd.edu/data/gimms/
+ftp://ftp.glcf.umd.edu/glcf/GIMMS/
+cd stow/stow/ft0001/GLCF.TSM.B8-002.00.Regional/Albers/North_America
+
+Black stem rust biology and threat to wheat growers
+http://www.ars.usda.gov/Main/docs.htm?docid=10755

@@ -1,0 +1,249 @@
+
+<!-- 40.9196s -->
+Abies balsamea,balsam fir
+Abies concolor,white fir
+Abies grandis,grand fir
+Abies lasiocarpa,subalpine fir
+Acer glabrum,Rocky Mountain maple
+Acer macrophyllum,bigleaf maple
+Acer negundo,boxelder
+Acer pensylvanicum,striped maple
+Acer rubrum,red maple
+Acer saccharum,sugar maple
+Achillea millefolium,common yarrow
+Adenostoma fasciculatum,chamise
+Aesculus californica,California buckeye
+Alliaria petiolata,garlic mustard
+Alnus incana,gray alder
+Alnus rubra,red alder
+Alnus viridis,green alder
+Ambrosia artemisiifolia,annual ragweed
+Amelanchier alnifolia,Saskatoon serviceberry
+Amelanchier canadensis,Canadian serviceberry
+Amelanchier utahensis,Utah serviceberry
+Andropogon gerardii,big bluestem
+Aquilegia caerulea,Colorado blue columbine
+Aquilegia canadensis,red columbine
+Aquilegia formosa,western columbine
+Arctostaphylos patula,greenleaf manzanita
+Arctostaphylos uva-ursi,kinnikinnick
+Arisaema triphyllum,jack in the pulpit
+Artemisia tridentata,big sagebrush
+Asclepias asperula,spider milkweed
+Asclepias incarnata,swamp milkweed
+Asclepias sullivanti,prairie milkweed
+Asclepias syriaca,common milkweed
+Asclepias tuberosa,butterfly milkweed
+Atriplex hymenelytra,desertholly
+Avicennia germinans,black mangrove
+Baccharis pilularis,coyotebrush
+Betula alleghaniensis,yellow birch
+Betula lenta,sweet birch
+Betula nana,dwarf birch
+Betula papyrifera,paper birch
+Bouteloua curtipendula,sideoats grama
+Bouteloua gracilis,blue grama
+Brassica rapa,field mustard
+Brassica tournefortii,Asian mustard
+Bromus tectorum,cheatgrass
+Buchloe dactyloides,buffalograss
+Bursera simaruba,gumbo limbo
+Caltha palustris,yellow marsh marigold
+Carex aquatilis,water sedge
+Carnegia gigantea,saguaro
+Carya glabra,pignut hickory
+Carya ovata,shagbark hickory
+Castanea dentata,American chestnut
+Ceanothus cuneatus,buckbrush
+Ceanothus velutinus,snowbrush ceanothus
+Centaurea solstitialis,yellow star-thistle
+Centaurea stoebe,spotted knapweed
+Cephalanthus occidentalis,common buttonbush
+Cercis canadensis,eastern redbud
+Cercocarpus ledifolius,curl-leaf mountain mahogany
+Chamaedaphne calyculata,leatherleaf
+Chamerion angustifolium,fireweed
+Cheirodendron trigynum,olapalapa
+Cirsium arvense,Canada thistle
+Cirsium vulgare,bull thistle
+Citrus spp.,citrus
+Claytonia lanceolata,lanceleaf springbeauty
+Claytonia virginica,Virginia springbeauty
+Clintonia borealis,bluebead
+Coleogyne ramosissima,blackbrush
+Conocarpus erectus,button mangrove
+Cornus canadensis,bunchberry dogwood
+Cornus florida,flowering dogwood
+Cornus florida-appalachianspring,Appalachian Spring dogwood
+Cornus foemina,stiff dogwood
+Cornus nuttallii,Pacific dogwood
+Cornus sericea,redosier dogwood
+Corylus americana,American hazelnut
+Corylus cornuta,beaked hazelnut
+Crocus spp.,crocus
+Dasiphora floribunda,shrubby cinquefoil
+Dicentra formosa,Pacific bleeding heart
+Diospyros virginiana,common persimmon
+Diplacus aurantiacus,orange bush monkeyflower
+Dodecatheon pulchellum,darkthroat shooting star
+Dodonaea viscosa,Florida hopbush
+Echinacea purpurea,eastern purple coneflower
+Epilobium canum,hummingbird trumpet
+Eriogonum fasciculatum,Eastern Mojave buckwheat
+Eriophorum angustifolium,tall cottongrass
+Eriophorum vaginatum,tussock cottongrass
+Erythronium americanum,dogtooth violet
+Eschscholzia californica,California poppy
+Euphorbia esula,leafy spurge
+Eurybia divaricata,white wood aster
+Fagus grandifolia,American beech
+Forsythia spp.,forsythia
+Fouquieria splendens,ocotillo
+Fragaria virginiana,Virginia strawberry
+Fraxinus americana,white ash
+Fraxinus pennsylvanica,green ash
+Gaultheria shallon,salal
+Hamamelis virginiana,American witchhazel
+Helianthus annuus,common sunflower
+Heracleum maximum,common cowparsnip
+Hesperostipa comata,needle and thread
+Heteromeles arbutifolia,toyon 
+Holodiscus discolor,oceanspray
+Impatiens capensis,jewelweed
+Ipomopsis aggregata,scarlet gilia
+Juglans nigra,black walnut
+Juniperus  scopulorum,Rocky Mountain juniper
+Juniperus monosperma,oneseed juniper
+Juniperus pinchotii,Pinchot's juniper
+Juniperus virginiana,eastern redcedar
+Kalmia latifolia,mountain laurel
+Laguncularia racemosa,white mangrove
+Larix laricina,tamarack
+Larrea tridentata,creosote bush
+Lathyrus japonicus,beach pea
+Lathyrus littoralis,silky beach pea
+Ledum groenlandicum,bog Labrador tea
+Leucaena leucocephala,white leadtree
+Liatris aspera,tall blazing star
+Limonium carolinianum,lavender thrift
+Linnaea borealis,twinflower
+Liquidambar styraciflua,sweetgum
+Liriodendron tulipifera,tuliptree
+Lonicera tatarica-arnoldred,Arnold Red honeysuckle
+Lupinus latifolius,broadleaf lupine
+Lupinus obtusilobus,bluntlobe lupine
+Lythrum salicaria,purple loosestrife
+Magnolia grandiflora,southern magnolia
+Mahonia repens,creeping barberry
+Maianthemum canadense,Canada mayflower
+Malus pumila,paradise apple
+Medicago sativa,alfalfa
+Melilotus officinalis,yellow sweetclover
+Mertensia virginica,Virginia bluebells
+Morella cerifera,wax myrtle
+Myriophyllum spicatum,Eurasian watermilfoil
+Oenothera biennis,common evening primrose
+Oenothera speciosa,pinkladies
+Oligoneuron rigidum,stiff goldenrod
+Olneya tesota,desert ironwood
+Opuntia humifusa,devil's-tongue
+Oxalis montana,mountain woodsorrel
+Panicum virgatum,switchgrass
+Parkinsonia florida,blue paloverde
+Parkinsonia microphylla,yellow paloverde
+Pascopyrum smithii,western wheatgrass
+Passiflora incarnata,purple passionflower
+Pennisetum ciliare,buffelgrass
+Penstemon newberryi,mountain pride
+Petasites frigidus,arctic sweet coltsfoot
+Philadelphus lewisii,Lewis' mock orange
+Phragmites australis,common reed
+Physocarpus malvaceus,mallow ninebark
+Picea engelmannii,Engelmann spruce
+Picea glauca,white spruce
+Picea mariana,black spruce
+Picea rubens,red spruce
+Pinus contorta,lodgepole pine
+Pinus edulis,twoneedle pinyon
+Pinus elliottii,slash pine
+Pinus palustris,longleaf pine
+Pinus ponderosa,ponderosa pine
+Pinus strobus,eastern white pine
+Pinus taeda,loblolly pine
+Podophyllum peltatum,mayapple
+Polygonum cuspidatum,Japanese knotweed
+Populus balsamifera,balsam poplar
+Populus tremuloides,quaking aspen
+Prosopis glandulosa,honey mesquite
+Prosopis juliflora,mesquite
+Prosopis velutina,velvet mesquite
+Prunus americana,American plum
+Prunus emarginata,bitter cherry
+Prunus persica,peach
+Prunus serotina,black cherry
+Prunus virginiana,chokecherry
+Prunus yedoensis,Yoshino cherry
+Pseudoroegneria spicata,bluebunch wheatgrass
+Pseudotsuga menziesii,Douglas-fir
+Pulsatilla patens,eastern pasqueflower
+Purshia tridentata,antelope bitterbrush
+Quercus agrifolia,California live oak
+Quercus alba,white oak
+Quercus douglasii,blue oak
+Quercus garryana,Oregon white oak
+Quercus geminata,sand live oak
+Quercus kelloggii,California black oak
+Quercus laurifolia,laurel oak
+Quercus lobata,valley oak
+Quercus macrocarpa,bur oak
+Quercus rubra,northern red oak
+Quercus virginiana,live oak
+Rhamnus cathartica,common buckthorn
+Rhododendron macrophyllum,Pacific rhododendron
+Rhus hirta,staghorn sumac
+Robinia pseudoacacia,black locust
+Rosa rugosa,rugosa rose
+Rosa woodsii,Woods' rose
+Rubus parviflorus,thimbleberry
+Rubus spectabilis,salmonberry
+Sabal palmetto,cabbage palmetto
+Salix caroliniana,coastal plain willow
+Salix glauca,greyleaf willow
+Salix planifolia,diamondleaf willow
+Sambucus nigra,black elderberry
+Sambucus racemosa,red elderberry
+Scientific Name,Common Name
+Serenoa repens,saw palmetto
+Simmondsia chinensis,jojoba
+Sisyrinchium bellum,western blue-eyed grass
+Solidago missouriensis,Missouri goldenrod
+Solidago rugosa,wrinkleleaf goldenrod
+Solidago sempervirens,seaside goldenrod
+Sorbus americana,American mountain ash
+Sphaeralcea coccinea,scarlet globemallow
+Spiraea alba,white meadowsweet
+Symphoricarpos albus,common snowberry
+Symphyotrichum ericoides,white heath aster
+Syringa chinensis,Red Rothomagensis lilac
+Syringa vulgaris,common lilac
+Tamarix spp.,tamarisk
+Taraxacum officinale,common dandelion
+Taxodium distichum,bald cypress
+Tilia americana,American basswood
+Tradescantia ohiensis,bluejacket
+Trifolium repens,white clover
+Trillium erectum,red trillium
+Trillium grandiflorum,white trillium
+Trillium ovatum,Pacific trillium
+Trillium undulatum,painted trillium
+Tsuga canadensis,eastern hemlock
+Tsuga mertensiana,mountain hemlock
+Vaccinium corymbosum,highbush blueberry
+Vaccinium uliginosum,bog blueberry
+Vaccinium vitis-idaea,lingonberry
+Vernonia fasciculata,prairie ironweed
+Viburnum lantanoides,hobblebush
+Viburnum obovatum,small-leaf arrowwood
+Vitis vinifera,wine grape
+Yucca brevifolia,Joshua tree
+Yucca schidigera,Mojave yucca
